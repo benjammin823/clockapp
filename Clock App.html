@@ -1,0 +1,77 @@
+<!doctype html>
+<html>
+<head>
+  <style>
+  body{
+    margin:0px;
+  }
+  #timeZoneList{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  #timeZoneList li{
+    display: inline-block;
+    height: 100px;
+    padding: 2%;
+    overflow: hidden;
+    position:relative;
+    width: 44%;
+    box-shadow: 0px;
+  }
+  #timeZoneList li:nth-child(odd){
+    background: lightgray;
+  }
+
+  #timeZoneList li iframe{
+    overflow: hidden;
+    border: none;
+    min-height: 320px;
+    min-width: 320px;
+    transform: translate(0,0) scale(.3);
+    transform-origin: 0 0;
+  }
+  #timeZoneList li h1{
+    font-size: 30px;
+    width: calc(95% - 100px);
+    float: right;
+    top: 0;
+    position: absolute;
+    right: 0px;
+  }
+  #timeZoneList li h2{
+    font-size: 20px;
+    width: calc(95% - 100px);
+    float: right;
+    top: 50px;
+    position: absolute;
+    right: 0px;
+  }
+
+  </style>
+</head>
+<body>
+  <ul id='timeZoneList'>
+    <li>
+      <iframe src='./Clock.html#-7'></iframe>
+      <h1> Phoenix </h1>
+      <h2> Arizona </h2>
+    </li>
+    <li>
+      <iframe src='./Clock.html#0'></iframe>
+      <h1> Greenwich </h1>
+      <h2> England </h2>
+    </li>
+    <li>
+      <iframe src='./Clock.html#-6'></iframe>
+      <h1> Monterrey </h1>
+      <h2> Mexico </h2>
+    </li>
+    <li>
+      <iframe src='./Clock.html#8'></iframe>
+      <h1> Hong Kong </h1>
+      <h2> China </h2>
+    </li>
+  </ul>
+</body>
+</html>
