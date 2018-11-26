@@ -197,7 +197,7 @@
       var tzname = listTZ[i].text;
       var tzdesc = listTZ[i].id;
       var offset = listTZ[i].id;
-      var url = "./clock100.html#" + offset;
+      var url = "./Clock100.html#" + offset;
       markup += "<button class='box' onclick='tzSelected(" + i + ")'> <h1>" + tzname + "</h1> <iframe src='" + url + "'></iframe> <div class='overlay'></div></button>"
     }
     document.getElementById("tzList").innerHTML = markup;
@@ -213,7 +213,7 @@
     $("#tzList button.box:nth-of-type(" + (index + 1) + ")").addClass("active");
 
     var listTZ = $("#timezoneSelect").select2("data");
-    var markup = "<h1>" + listTZ[index].text + "</h1><iframe src='clock.html#" + listTZ[index].id + "'></iframe>";
+    var markup = "<h1>" + listTZ[index].text + "</h1><iframe src='Clock.html#" + listTZ[index].id + "'></iframe>";
     document.getElementById("clockWrapper").innerHTML = markup;
   }
   </script>
